@@ -40,7 +40,7 @@ image::message-source-and-queue.png[Message+source+and+queue]
 
 Sometimes, a message source can accept incoming messages from multiple transport channels. For instance, you can embed an HTTP endpoint and a Servlet endpoint into a composite message source. Or you can create a composite message source to receive both IMAP and POP3 mail. Either embedded connector can trigger a flow instance as soon as it receives an incoming message.
 
-Under certain conditions, flows do not need to be triggered by message sources. For instance, a xref:flow-reference-component-reference.adoc[Flow Reference Component] can trigger a different flow in the same application. Similarly, the xref:async-scope-reference.adoc[Async Scope] can trigger a another flow that executes asynchronously, (i.e. in parallel with the originating flow).
+Under certain conditions, flows do not need to be triggered by message sources. For instance, a xref:flow-reference-component-reference.adoc[Flow Reference Component] can trigger a different flow in the same application. Similarly, the xref:async-scope-reference.adoc[Async Scope] can trigger another flow that executes asynchronously, (i.e. in parallel with the originating flow).
 
 === Message Processors
 
